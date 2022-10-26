@@ -1,0 +1,22 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.text-hover {
+  color: white;
+}
+
+.text-hover:hover {
+  color: #7e74f1;
+}
+
+.icon-hover {
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.icon-hover:hover {
+  border: 3px solid white;
+  border-radius: 10px;
+}
