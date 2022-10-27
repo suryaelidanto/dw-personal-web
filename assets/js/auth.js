@@ -74,9 +74,6 @@ async function login() {
     return alert("Wrong email / password!");
   }
 
-  // set token to localstorage
-  localStorage.setItem("token", token);
-
   // check auth after login
   checkAuth();
 
@@ -90,8 +87,8 @@ async function login() {
   // console.log("error", error);
 }
 
-function logout() {
-  localStorage.removeItem("token");
+async function logout() {
+  const { user, error } = await kontenbaseClient.auth.logout();
   checkAuth();
   alert("Logout success!");
 }
