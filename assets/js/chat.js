@@ -39,6 +39,7 @@ async function getData() {
   let initData = "";
 
   data.map((item) => {
+    console.log("ini item", item);
     if (item.idSender[0]._id == user._id) {
       initData += `
       <div class="w-100 d-flex justify-content-end">
